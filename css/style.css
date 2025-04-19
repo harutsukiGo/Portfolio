@@ -17,9 +17,7 @@ nav {
     width: 100%;
 }
 
-.divTitre {
 
-}
 
 .texteTitre {
     font-family: 'ArtBrush', sans-serif;
@@ -27,7 +25,6 @@ nav {
     font-weight: bold;
     margin-left: 20px;
     animation: fadeIn 0.3s ease-out;
-
 }
 
 .navbar {
