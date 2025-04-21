@@ -9,22 +9,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.cdnfonts.com/css/artbrush" rel="stylesheet">
 </head>
-
+<body>
 <header>
-
     <nav>
         <div class="divTitre">
-            <a class="texteTitre"> AR</a>
+            <a class="texteTitre" href="index.html"> AR</a>
         </div>
         <div class="navbar">
-            <div class="accueil"><a href="">Accueil</a></div>
             <div class="projets"><a href="">Mes projets</a></div>
             <div class="aPropos"><a href="">À propos</a></div>
+            <div class="contact"><a href="">Contact</a></div>
+            <div class="imageGit">
+                <a href="https://github.com/harutsukiGo">
+                <img src="img/github.png" alt="img1" id="github">
+                </a>
+            </div>
+            <div class="imageLinkedin">
+                <a href="https://www.linkedin.com/in/manu-andriamihaja/">
+                <img src="img/linkedin.png" alt="img2" id="linkedin">
+                </a>
+            </div>
+
         </div>
         <button class="burger-menu" onclick="toggleMenu()">☰</button>
     </nav>
 </header>
-<body>
+<main>
+<div class="presentation">
+   <h1> Bonjour ! Je m'appelle Manu Andriamihaja.</h1>
+    <p class="statut"> Je suis un étudiant en deuxième année de BUT Informatique à l'IUT de Montpellier-Sète.</p>
+</div>
+    <section class="projetsCompetences">
+        <div class="dev">
+            <h2> Du développement</h2>
+            <p>J'ai surtout travaillé sur des projets en Java,
+                ainsi que sur des projets web en HTML/CSS utilisant PHP,
+                sans oublier le SQL et PL/SQL.
+            </p>
+        </div>
+        <div class="equipe">
+<h2>Travail en équipe</h2>
+            <p>J'ai eu l'occasion de collaborer sur divers projets académiques avec plusieurs personnes.
+                Cela me poussait à m'adapter en fonction de chacun des membres du groupe. </p>
+        </div>
+        <div class="motivation">
+<h2>Motivé et rigoureux</h2>
+            <p>Je m'investis pleinement dans chaque projet que j'entreprends, sans jamais sous-estimer le travail à réaliser.</p>
+        </div>
+    </section>
 
+
+    <section class="projetsExemples">
+        <div class="titreMesProjets">
+            <h3> Mes Projets</h3>
+            <a href="" id="buttonPlus">Voir plus ›</a>
+        </div>
+        <p class="descriptionProjets">Découvrez mes derniers projets académiques !</p>
+        <div class="mesProjets">
+            <div class="projet1"> <a href=""> Trains </a></div>
+            <div class="projet2"> <a href=""> ChatBot </a></div>
+            <div class="projet3"> <a href=""> CTFd </a></div>
+            <div class="projet4"> <a href=""> Site E-commerce </a></div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div id="divFooter"></div>
+ </footer>
 </body>
 </html>
