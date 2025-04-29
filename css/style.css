@@ -1,22 +1,46 @@
+/*body, html {*/
+/*    width: 100%;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    font-family: Lato, "Helvetica Neue", helvetica, sans-serif;*/
+/*    !*background-color: black;*!*/
+/*    !*background: linear-gradient(to bottom right, #000000, #001a2c);*!*/
+/*    !* background-color: #0d1117; !* Similaire au mode sombre de GitHub *!*!*/
+/*    background-color: #0a0b17;*/
+/*    !* Bleu-noir avec légère teinte violette * vrm pas mal/*/
+
+
+/*       !*background-image: url("../img/sky.jpeg");*!*/
+/*    !*background-size: cover;*!*/
+/*    !*background-repeat: no-repeat;*!*/
+/*    !*height: 100vh;*!*/
+/*}*/
+
 
 body, html {
     width: 100%;
+    min-height: 100vh; /* Garantit une hauteur minimale */
     margin: 0;
     padding: 0;
     font-family: Lato, "Helvetica Neue", helvetica, sans-serif;
-    /*background-color: black;*/
-    /*background: linear-gradient(to bottom right, #000000, #001a2c);*/
-    /* background-color: #0d1117; !* Similaire au mode sombre de GitHub *!*/
-    background-color: #0a0b17;
-    /* Bleu-noir avec légère teinte violette * vrm pas mal/
+    /*background-color: #0a0b17;*/
+    display: flex;
+    flex-direction: column; /* Organisation verticale */
 
 
-       /*background-image: url("../img/sky.jpeg");*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*height: 100vh;*/
+    /* Pour éviter la répétition du dégradé sur les pages longues */
+    background: linear-gradient(to bottom,
+    #0a0b17, /* Couleur foncée de départ (votre couleur actuelle) */ #06cfed, /* Bleu plus profond au milieu */ #000000, /* Bleu plus intense */ #000000 /* Bleu foncé en bas */
+    ) fixed;
+
 }
 
+main {
+    flex: 1;
+    margin-bottom: 7vh;
+}
+
+/* index */
 
 nav {
     display: flex;
@@ -97,7 +121,7 @@ nav {
 #divFooter {
     background-color: #0a0b17;
     color: white;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     font-size: 15px;
@@ -122,7 +146,7 @@ nav {
 }
 
 
-#github, #linkedin {
+#github, #linkedin, #mailIcon {
     height: 30px;
 }
 
@@ -259,7 +283,7 @@ h3 {
     transition: box-shadow 0.3s ease;
     align-items: center;
     font-size: 1.5vh;
-    margin-right:20px ;
+    margin-right: 20px;
     margin-left: 20px;
 }
 
@@ -271,6 +295,68 @@ h3 {
 .projetsExemples {
     margin-bottom: 20vh;
 
+}
+
+/* A Propos */
+.containerGlobal {
+    color: white;
+    padding: 0 20px;
+}
+
+.titreAPropos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 15vh auto;
+}
+
+.texte {
+    /*!* Gestion du débordement et de la coupure des mots *!*/
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+
+    /*!* Taille de police adaptative avec minimum et maximum *!*/
+    /*font-size: clamp(14px, 1vw + 12px, 18px);*/
+
+    /*!* Espacement des lignes pour améliorer la lisibilité *!*/
+    line-height: 1.6;
+
+    /*!* Marges internes pour éviter que le texte touche les bords *!*/
+    /*padding: 0 15px;*/
+
+    width: 100%;
+    box-sizing: border-box;
+
+    /*!* Marges externes pour centrer le texte si nécessaire *!*/
+
+}
+
+h2 {
+    text-shadow: 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #08a5ea,
+    0 0 30px #08a5ea,
+    0 0 40px #08a5ea;
+}
+
+/* Projet 1*/
+.imgProjet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgProjet img {
+    border-radius: 1.5rem;
+    height: auto;
+}
+
+.titreProjet {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5vh auto;
 }
 
 @media (max-width: 920px) {
@@ -347,8 +433,105 @@ h3 {
         box-sizing: border-box;
     }
 
+    /* A Propos */
+    .texte {
+        /*font-size: clamp(13px, 1vw + 11px, 16px);*/
+        line-height: 1.5;
+        /*padding: 0 10px;*/
+    }
+
+    /* Projet 1*/
+    .imgProjet {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .imgProjet img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 1rem;
+    }
+
+    /* Améliorations pour la page contact */
+    .divContact {
+        margin: 0 auto 10vh auto;
+        width: 85%;
+        align-items: center;
+        justify-content: center;
+     }
+
+    .reseauContact {
+        /*flex-direction: column;*/
+        margin-bottom: 20px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reseauContact img {
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .reseauContact p,
+    .reseauContact a {
+        margin: 5px 0;
+        font-size: 14px;
+    }
 }
 
+/*Contact*/
+.divContact {
+    display: flex;
+    /*color: white;*/
+    margin-bottom: 20vh;
+    text-align: center;
+    /*border-radius: 10px;*/
+    /*height: 20vh;*/
+    /*box-shadow: 0 0 5px #00d9ff,*/
+    /*0 0 10px #00d9ff,*/
+    /*0 0 15px #00d9ff;*/
+    /*transition: box-shadow 0.3s ease;*/
+    font-size: 1.5vh;
+    margin-right: 20px;
+    margin-left: 20px;
+    flex-direction: column;
+
+}
+
+.reseauContact {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.reseauContact img {
+    padding-right: 20px;
+}
+
+.reseauContact a {
+    text-decoration: none;
+    color: white;
+}
+
+#buttonCV {
+    color: white;
+    text-decoration: none;
+    padding: 15px 12px;
+    border-radius: 999rem;
+    background-color: rgba(0, 217, 255, 0.1);
+    box-shadow: 0 0 5px #00d9ff;
+    transition: all 0.3s ease;
+    font-size: 1.5vh;
+    gap: .8em;
+    margin-top: 2vh ;
+  }
+
+/*projet 2*/
+.lien{
+    text-decoration: none;
+    color: white;
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
