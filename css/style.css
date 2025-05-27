@@ -23,15 +23,18 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Lato, "Helvetica Neue", helvetica, sans-serif;
-    /*background-color: #0a0b17;*/
+    background-color: #0a0b17;
     display: flex;
     flex-direction: column; /* Organisation verticale */
-
+           background-image: url("../img/blue.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*height: 100vh;*/
 
     /* Pour éviter la répétition du dégradé sur les pages longues */
-    background: linear-gradient(to bottom,
-    #0a0b17, /* Couleur foncée de départ (votre couleur actuelle) */ #06cfed, /* Bleu plus profond au milieu */ #000000, /* Bleu plus intense */ #000000 /* Bleu foncé en bas */
-    ) fixed;
+    /*background: linear-gradient(to bottom,*/
+    /*#0a0b17, !* Couleur foncée de départ (votre couleur actuelle) *! #06cfed, !* Bleu plus profond au milieu *! #000000, !* Bleu plus intense *! #000000 !* Bleu foncé en bas *!*/
+    /*) fixed;*/
 
 }
 
@@ -76,7 +79,7 @@ nav {
 }
 
 .navbar {
-    font-size: 15px;
+    font-size: 20px;
     display: flex;
     animation: fadeIn 0.3s ease-out;
 }
@@ -119,12 +122,15 @@ nav {
 }
 
 #divFooter {
-    background-color: #0a0b17;
+    /*background-color: #0a0b17;*/
+    /*background-image: url("../img/blue.png");*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
     color: white;
     position: relative;
     bottom: 0;
     width: 100%;
-    font-size: 15px;
+    font-size: 20px;
     height: 5vh;
     display: flex;
     align-items: center;
@@ -285,6 +291,8 @@ h3 {
     font-size: 1.5vh;
     margin-right: 20px;
     margin-left: 20px;
+    background-color: #0a0b17;
+
 }
 
 .projetsCompetences div {
@@ -301,6 +309,9 @@ h3 {
 .containerGlobal {
     color: white;
     padding: 0 20px;
+    font-size: 27px;
+    margin-right: 127px;
+    margin-left: 127px;
 }
 
 .titreAPropos {
@@ -359,13 +370,13 @@ h2 {
     margin: 5vh auto;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1300px) {
     .navbar {
         display: none;
         flex-direction: column;
         position: absolute;
         top: 82px;
-        background-color: #2b2d30;
+        background-color: #0a0b17;
         width: 100%;
         animation: fadeIn 0.3s ease-out;
     }
@@ -385,14 +396,14 @@ h2 {
     }
 
     h1 {
-        font-size: 2vh;
+        font-size: 3.5vh;
         text-align: center;
         max-width: 590px;
         margin: 0 auto;
     }
 
     .statut {
-        font-size: 15px;
+        font-size: 30px;
         text-align: center;
         padding-top: 10px;
         max-width: 590px;
@@ -542,3 +553,50 @@ h2 {
         transform: translateY(0);
     }
 }
+
+
+/*
+Portfolio d'apprentisage
+*/
+.competence {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #00d9ff, 0 0 10px #00d9ff, 0 0 15px #00d9ff;
+    transition: box-shadow 0.3s ease;
+    background-color: #0a0b17;
+
+}
+
+.competence:hover {
+    box-shadow: 0 0 10px #00d9ff, 0 0 20px #00d9ff, 0 0 30px #00d9ff;
+}
+
+.niveau {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.acquis {
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+.en-cours {
+    color: #ffff00;
+    text-shadow: 0 0 5px #ffff00;
+}
+
+.non-acquis {
+    color: #ff6666;
+    text-shadow: 0 0 5px #ff6666;
+}
+
+.competence h3 {
+    font-size: 1.8vh;
+    margin-bottom: 10px;
+}
+
+.lien{
+    font-style: italic;
+ }
