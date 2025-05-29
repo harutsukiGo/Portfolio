@@ -4,3 +4,4 @@ document.write(`
     <div id="divFooter"></div>
 </footer>
 `);
+
