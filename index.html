@@ -5,15 +5,16 @@
     <title>Accueil</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">    <link href="https://fonts.cdnfonts.com/css/artbrush" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/artbrush" rel="stylesheet">
     <link type="icon" href="img/ar.png" rel="icon">
 </head>
 <body>
 <header>
     <nav>
-        <div class="divTitre">
-            <a class="texteTitre" href="index.html"> AR</a>
-        </div>
+        <!--        <div class="divTitre">-->
+        <a class="texteTitre" href="index.html"> ARM</a>
+        <!--        </div>-->
         <div class="navbar">
             <div class="projets"><a href="#buttonPlus">Mes projets</a></div>
             <div class="projets"><a href="competences.html">Portfolio d'apprentissage</a></div>
@@ -21,12 +22,12 @@
             <div class="contact"><a href="contact.html">Contact</a></div>
             <div class="imageGit">
                 <a href="https://github.com/harutsukiGo">
-                <img src="img/github.png" alt="img1" id="github">
+                    <img src="img/github.png" alt="img1" id="github">
                 </a>
             </div>
             <div class="imageLinkedin">
                 <a href="https://www.linkedin.com/in/manu-andriamihaja/">
-                <img src="img/linkedin.png" alt="img2" id="linkedin">
+                    <img src="img/linkedin.png" alt="img2" id="linkedin">
                 </a>
             </div>
 
@@ -35,10 +36,11 @@
     </nav>
 </header>
 <main>
-<div class="presentation">
-   <h1> Bonjour ! Je m'appelle Manu Andriamihaja.</h1>
-    <p class="statut"> Passionné par le dessin et les nouvelles technologies, je souhaite faire de l'informatique mon futur métier !</p>
-</div>
+    <div class="presentation">
+        <h1> Bonjour ! Je m'appelle Manu Andriamihaja.</h1>
+        <p class="statut"> Passionné par le dessin et les nouvelles technologies, je souhaite faire de l'informatique
+            mon futur métier !</p>
+    </div>
     <section class="projetsCompetences">
         <div class="dev">
             <h2> Du développement</h2>
@@ -48,13 +50,14 @@
             </p>
         </div>
         <div class="equipe">
-<h2>Travail en équipe</h2>
+            <h2>Travail en équipe</h2>
             <p>J'ai eu l'occasion de collaborer sur divers projets académiques avec plusieurs personnes.
                 Cela me poussait à m'adapter en fonction de chacun des membres du groupe. </p>
         </div>
         <div class="motivation">
-<h2>Motivé et rigoureux</h2>
-            <p>Je m'investis pleinement dans chaque projet que j'entreprends, sans jamais sous-estimer le travail à réaliser.</p>
+            <h2>Motivé et rigoureux</h2>
+            <p>Je m'investis pleinement dans chaque projet que j'entreprends, sans jamais sous-estimer le travail à
+                réaliser.</p>
         </div>
     </section>
 
@@ -66,15 +69,36 @@
         </div>
         <p class="descriptionProjets">Découvrez mes derniers projets académiques !</p>
         <div class="mesProjets">
-            <div class="projet1"> <a href="projet1.html"> Trains </a></div>
-            <div class="projet2"> <a href="projet2.html"> ChatBot </a></div>
-            <div class="projet3"> <a href="projet3.html"> CTFd </a></div>
-            <div class="projet4"> <a href="projet4.html"> Site E-commerce </a></div>
+        <div class="divProjet">
+            <a class="aProjet" href="projet1.html">
+                <img class="imgProjetIndex" src="img/trains.jpg" alt="trains">
+                <div class="projet"> Trains</div>
+            </a>
+        </div>
+        <div class="divProjet">
+            <a href="projet2.html">
+            <img class="imgProjetIndex" src="img/chatbot.jpg" alt="chatbot">
+            <div class="projet"> ChatBot</div>
+            </a>
+        </div>
+        <div class="divProjet">
+            <a href="projet3.html">
+            <img class="imgProjetIndex" src="img/ygg.png" alt="ctfd">
+            <div class="projet"> CTFd</div>
+            </a>
+        </div>
+        <div class="divProjet">
+            <a href="projet4.html">
+            <img class="imgProjetIndex" src="img/ecommerce.jpg" alt="site">
+            <div class="projet">E-commerce</div>
+            </a>
+        </div>
+
         </div>
     </section>
 </main>
 <footer>
     <div id="divFooter"></div>
- </footer>
+</footer>
 </body>
 </html>

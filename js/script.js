@@ -7,9 +7,9 @@ function toggleMenu() {
 function date() {
     const date = document.getElementById('divFooter');
     let dateActuel = new Date();
-    date.textContent = ` © ${dateActuel.toLocaleDateString('fr-FR', {
+    date.innerHTML = ` <p class="nomDate">© ${dateActuel.toLocaleDateString('fr-FR', {
         year: 'numeric',
-    })} Manu Andriamihaja`;
+    })} Manu Andriamihaja</p>`;
  }
 
 
