@@ -12,26 +12,32 @@
 <body>
 <header>
     <nav>
-        <!--        <div class="divTitre">-->
         <a class="texteTitre" href="index.html"> ARM</a>
-        <!--        </div>-->
+
+        <div class="composantNavbar" id="navbarMenu">
+
         <div class="navbar">
             <div class="projets"><a href="#buttonPlus">Mes projets</a></div>
-            <div class="projets"><a href="competences.html">Portfolio d'apprentissage</a></div>
             <div class="aPropos"><a href="aPropos.html">À propos</a></div>
             <div class="contact"><a href="contact.html">Contact</a></div>
+        </div>
+        <div class="navbar">
             <div class="imageGit">
                 <a href="https://github.com/harutsukiGo">
-                    <img src="img/github.png" alt="img1" id="github">
+                    <img src="img/github.svg" alt="GitHub" id="githubImg" width="28" height="28">
                 </a>
+
+
             </div>
             <div class="imageLinkedin">
                 <a href="https://www.linkedin.com/in/manu-andriamihaja/">
-                    <img src="img/linkedin.png" alt="img2" id="linkedin">
+                    <img src="img/linkedin.svg" alt="img2" id="linkedinImg" width="27" height="27">
                 </a>
             </div>
 
         </div>
+        </div>
+
         <button class="burger-menu" onclick="toggleMenu()">☰</button>
     </nav>
 </header>
@@ -41,59 +47,78 @@
         <p class="statut"> Passionné par le dessin et les nouvelles technologies, je souhaite faire de l'informatique
             mon futur métier !</p>
     </div>
+
     <section class="projetsCompetences">
-        <div class="dev">
-            <h2> Du développement</h2>
-            <p>J'ai surtout travaillé sur des projets en Java,
-                ainsi que sur des projets web en HTML/CSS utilisant PHP,
-                sans oublier le SQL et PL/SQL.
-            </p>
+        <div class="pc-card">
+            <div class="pc-row">
+                <div class="pc-icon">&lt;/&gt;</div>
+                <h2>Du développement</h2>
+            </div>
+            <p>J'ai surtout travaillé sur des projets en Java, ainsi que sur des projets web en HTML/CSS utilisant PHP mais également en Symfony avec du Twig, sans oublier le SQL et PL/SQL.</p>
         </div>
-        <div class="equipe">
-            <h2>Travail en équipe</h2>
-            <p>J'ai eu l'occasion de collaborer sur divers projets académiques avec plusieurs personnes.
-                Cela me poussait à m'adapter en fonction de chacun des membres du groupe. </p>
+
+        <div class="pc-card">
+            <div class="pc-row">
+                <div class="pc-icon">👥</div>
+                <h2>Travail en équipe</h2>
+            </div>
+            <p>J'ai eu l'occasion de collaborer sur divers projets académiques avec plusieurs personnes. Cela me poussait à m'adapter en fonction de chacun des membres du groupe.</p>
         </div>
-        <div class="motivation">
-            <h2>Motivé et rigoureux</h2>
-            <p>Je m'investis pleinement dans chaque projet que j'entreprends, sans jamais sous-estimer le travail à
-                réaliser.</p>
+
+        <div class="pc-card">
+            <div class="pc-row">
+                <div class="pc-icon">🎯</div>
+                <h2>Motivé et rigoureux</h2>
+            </div>
+            <p>Je m'investis pleinement dans chaque projet que j'entreprends, sans jamais sous-estimer le travail à réaliser.</p>
         </div>
     </section>
 
 
     <section class="projetsExemples">
         <div class="titreMesProjets">
-            <h3> Mes Projets</h3>
+            <h3> Mes projets académiques et expériences professionnelles</h3>
             <a href="competences.html" id="buttonPlus">Portfolio d'apprentissage ›</a>
         </div>
-        <p class="descriptionProjets">Découvrez mes derniers projets académiques !</p>
-        <div class="mesProjets">
-        <div class="divProjet">
-            <a class="aProjet" href="projet1.html">
-                <img class="imgProjetIndex" src="img/trains.jpg" alt="trains">
-                <div class="projet"> Trains</div>
-            </a>
-        </div>
-        <div class="divProjet">
-            <a href="projet2.html">
-            <img class="imgProjetIndex" src="img/chatbot.jpg" alt="chatbot">
-            <div class="projet"> ChatBot</div>
-            </a>
-        </div>
-        <div class="divProjet">
-            <a href="projet3.html">
-            <img class="imgProjetIndex" src="img/ygg.png" alt="ctfd">
-            <div class="projet"> CTFd</div>
-            </a>
-        </div>
-        <div class="divProjet">
-            <a href="projet4.html">
-            <img class="imgProjetIndex" src="img/ecommerce.jpg" alt="site">
-            <div class="projet">E-commerce</div>
-            </a>
-        </div>
 
+        <p class="descriptionProjets">Explorez mes récents projets académiques et mes expériences professionnelles !</p>
+
+        <div class="projects-grid">
+            <a class="example-card" href="projet1.html" aria-label="Trains">
+                <div class="thumb" style="background-image:url('img/trains.jpg')"></div>
+                <div class="content">
+                    <span class="tag">Java</span>
+                    <h4>Trains</h4>
+                    <p>Adaptation du célèbre jeu de deck building Trains.</p>
+                </div>
+            </a>
+
+            <a class="example-card" href="projet2.html" aria-label="ChatBot">
+                <div class="thumb" style="background-image:url('img/chatbot.jpg')"></div>
+                <div class="content">
+                    <span class="tag">IA / Web</span>
+                    <h4>ChatBot</h4>
+                    <p>Assistant conversationnel développé lors de la NDI.</p>
+                </div>
+            </a>
+
+            <a class="example-card" href="projet3.html" aria-label="CTFd">
+                <div class="thumb" style="background-image:url('img/ygg.png')"></div>
+                <div class="content">
+                    <span class="tag">Sécurité</span>
+                    <h4>CTFd</h4>
+                    <p>Développement d'un CTF sur la plateforme CTFd pour s'amuser et se sensibiliser à la cybersécurité.</p>
+                </div>
+            </a>
+
+            <a class="example-card" href="projet4.html" aria-label="E-commerce">
+                <div class="thumb" style="background-image:url('img/image 2.png')"></div>
+                <div class="content">
+                    <span class="tag">Web</span>
+                    <h4>QueueApp</h4>
+                    <p>Développement d'une solution de gestion de file d'attente lors d'un stage de 8 semaines.</p>
+                </div>
+            </a>
         </div>
     </section>
 </main>

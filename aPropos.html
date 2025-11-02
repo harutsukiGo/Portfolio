@@ -7,20 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.cdnfonts.com/css/artbrush" rel="stylesheet">
     <link type="icon" href="img/ar.png" rel="icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
 <script src="js/navbar.js"></script>
 
 <main>
+
+    <div class="aProposDeMoi">
+        <h1> À propos de moi</h1>
+        <p class="statut">Découvez mon parcours, mes compétences et mon cursus scolaire. </p>
+    </div>
     <section class="containerGlobal">
-        <div class="titreAPropos">
-        <h3>À propos de moi </h3>
-        <p>Découvez mon parcours, mes compétences et mon cursus scolaire. </p>
-        </div>
+
+
 
         <h2 class="h2APropos"> Qui suis-Je ?</h2>
         <p class="texte">
-            Je m’appelle Manu Andriamihaja, je suis en ce moment en deuxième année de BUT Informatique à l’IUT de
+            Je m’appelle Manu Andriamihaja, je suis en actuellement en troisième année de BUT Informatique à l’IUT de
             Montpellier-Sète, spécialité Intégration d’Applications et Management du Système d’Information.
 
             Depuis toujours, je porte un grand intérêt à l'informatique, mais c'est au cours de mon stage de 3ème dans
@@ -31,23 +35,63 @@
             j’ai fini par prendre l’option SIN en terminale. Mon parcours actuel m’a conduit à intégrer un BUT, et je
             dispose de bases solides en développement web et en logiciel, ainsi qu’en bases de données et en gestion de
             projet. Je projette dans le futur de rester dans le domaine de l'informatique, car c'est un secteur d'avenir
-            qui ne cessera pas de se développer en matière d'emplois. En ce moment, je me projette davantage dans une
+            qui ne cessera de se développer en matière d'emplois. En ce moment, je me projette davantage dans une
             carrière liée au développement web/logiciel, ou une carrière dans les bases de données.
 
             Concernant mes passions, j'adore dessiner des portraits réalistes, mais je m'intéresse aussi beaucoup aux
-            illustrations inspirées par les mangas.
+            illustrations inspirées par les mangas. Je suis également un grand amateur de voitures de sport !
         </p>
-        <h2>Diplômes </h2>
-        <p class="texte">
-            BUT Informatique (Parcours Intégration d'applications et management du système d'information) ~ en cours<br>
-            Baccalauréat sciences et technologies de l'industrie et du développement durable (Option SIN) - 2021/2022
-        </p>
+
+        <h2>Diplômes</h2>
+        <div class="diplomes-container">
+            <div class="diplome">
+                <span class="diplome-titre">BUT Informatique</span>
+                <span class="diplome-details">(Parcours Intégration d&#39;applications et management du système d&#39;information)</span>
+                <span class="diplome-annee">2023/2026</span>
+            </div>
+
+            <div class="diplome">
+                <span class="diplome-titre">Baccalauréat STI2D</span>
+                <span class="diplome-details">(Option SIN)</span>
+                <span class="diplome-annee">2021/2022</span>
+            </div>
+        </div>
         <h2>Compétences</h2>
-        <p class="texte">
-            Programmation : Java, C, Python<br>
-            Web : HTML, CSS, PHP, JS<br>
-            Bases de données : SQL, PL/SQL, JDBC
-        </p>
+
+
+        <div class="CompetencesContainer">
+            <div class="competenceChild">
+                <h2>Programmation</h2>
+                <div class="skill-chips">
+                    <span class="chip"><i class="devicon-java-plain colored" aria-hidden="true"></i><span>Java</span></span>
+                    <span class="chip"><i class="devicon-c-plain colored" aria-hidden="true"></i></span>
+                    <span class="chip"><i class="devicon-python-plain colored" aria-hidden="true"></i><span>Python</span></span>
+                </div>
+            </div>
+
+            <div class="competenceChild">
+                <h2>Web</h2>
+                <div class="skill-chips">
+                    <span class="chip"><i class="devicon-html5-plain colored" aria-hidden="true"></i><span>HTML</span></span>
+                    <span class="chip"><i class="devicon-css3-plain colored" aria-hidden="true"></i><span>CSS</span></span>
+                    <span class="chip"><i class="devicon-php-plain colored" aria-hidden="true"></i><span>PHP</span></span>
+                    <span class="chip"><i class="devicon-javascript-plain colored" aria-hidden="true"></i><span>JS</span></span>
+                </div>
+            </div>
+
+            <div class="competenceChild">
+                <h2>Bases de données</h2>
+                <div class="skill-chips">
+                    <span class="chip"><i class="devicon-mysql-plain colored" aria-hidden="true"></i><span>SQL</span></span>
+                    <span class="chip"><i class="devicon-oracle-original colored" aria-hidden="true"></i><span>PL/SQL</span></span>
+                    <span class="chip"><i class="devicon-java-plain colored" aria-hidden="true"></i><span>JDBC</span></span>
+                </div>
+            </div>
+        </div>
+
+
+
+
     </section>
 </main>
 

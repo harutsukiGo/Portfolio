@@ -9,7 +9,7 @@ function date() {
     let dateActuel = new Date();
     date.innerHTML = ` <p class="nomDate">© ${dateActuel.toLocaleDateString('fr-FR', {
         year: 'numeric',
-    })} Manu Andriamihaja</p>`;
+    })} ARM</p>`;
  }
 
 
