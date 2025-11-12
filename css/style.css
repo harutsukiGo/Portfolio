@@ -257,7 +257,7 @@ h1 {
     animation: fadeIn 0.3s ease-out;
     width: 100%;
     min-height: 70vh;
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.45)), url("../img/image.png");
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.45)), url("../img/contact.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
