@@ -931,7 +931,12 @@ h2 {
     margin-top: 2vh;
 }
 
-
+.div-CV {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 /*projet 2*/
 .lien {
     text-decoration: none;
