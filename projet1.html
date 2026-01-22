@@ -17,35 +17,113 @@
         <p class="statut">J'ai développé en binôme, un site web permettant de générer des avatars ! </p>
     </div>
 
-    <section class="containerGlobal">
+    <section class="containerGlobal projet-detail">
 
-        <div class="imgProjet"><img src="gif/myavatar.gif" alt="myavatar"></div>
-        <h2 class="h2APropos"> Générer son avatar n'a jamais été aussi simple  !</h2>
-        <p class="texte">
-            Le projet "My Avatar" consiste à développer une application web innovante inspirée du service Gravatar,
-            visant à faciliter la gestion et la visualisation d’avatars associés aux profils des utilisateurs. Cette
-            application permet, grâce à la génération d’un URL unique créé via le hachage de l’adresse e-mail de
-            l’utilisateur, d’accéder de manière sécurisée à son image de profil.
-            <br>
-            L’objectif principal est d’offrir une solution simple et efficace pour gérer des avatars personnalisés tout
-            en respectant la confidentialité des données des utilisateurs. L'application prend en charge différentes
-            tailles d'images et formats, permettant une adaptation flexible aux besoins de diverses plateformes.
-            <br>
-            Pour la réalisation de ce projet, j’ai utilisé le framework Symfony, qui est un framework que j’ai découvert
-            en début d’année, ainsi que du JavaScript pour garantir la réactivité et l’interactivité de l’interface
-            utilisateur. L’intégration de requêtes AJAX permet des mises à jour en temps réel sans rechargement de la
-            page notamment pour permettre de mettre son image de profil en privée bloquant sa visualiton, ce qui permet
-            d’améliorer l’expérience utilisateur.
-            <br>
-            L’interface est conçue en HTML/CSS avec une attention particulière portée à l’ergonomie et à
-            l’accessibilité.
-        </p>
-        <h2>Ce que j’ai appris </h2>
+        <!-- Section Hero avec l'image -->
+        <div class="projet-hero">
+            <div class="imgProjet">
+                <img src="gif/myavatar.gif" alt="myavatar">
+            </div>
+            <div class="projet-hero-info">
+                <h2 class="h2APropos">Générer son avatar n'a jamais été aussi simple !</h2>
+                <div class="tech-stack">
+                    <span class="tech-badge">Symfony</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">AJAX</span>
+                    <span class="tech-badge">HTML/CSS</span>
+                </div>
+            </div>
+        </div>
 
-        <p class="texte">
-            Ce premier projet m’a permis de développer mes compétences sur un framework via Symfony, que j’ai pu mettre
-            en pratique pour ce projet. Il m’a également permis de consolider mes compétences en JavaScript.
-        </p>
+        <!-- Section Description -->
+        <div class="projet-section">
+            <div class="section-header">
+                <h3>Description du projet</h3>
+            </div>
+            <div class="section-content">
+                <p class="texte">
+                    Le projet <strong>"My Avatar"</strong> consiste à développer une application web innovante inspirée du service Gravatar,
+                    visant à faciliter la gestion et la visualisation d'avatars associés aux profils des utilisateurs. Cette
+                    application permet, grâce à la génération d'un URL unique créé via le hachage de l'adresse e-mail de
+                    l'utilisateur, d'accéder de manière sécurisée à son image de profil.
+                </p>
+                <p class="texte">
+                    L'objectif principal est d'offrir une solution simple et efficace pour gérer des avatars personnalisés tout
+                    en respectant la confidentialité des données des utilisateurs. L'application prend en charge différentes
+                    tailles d'images et formats, permettant une adaptation flexible aux besoins de diverses plateformes.
+                </p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>URL Unique</h4>
+                        <p>Génération d'un URL unique via le hachage de l'adresse e-mail pour un accès sécurisé.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Confidentialité</h4>
+                        <p>Gestion des avatars personnalisés tout en respectant la vie privée des utilisateurs.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Flexibilité</h4>
+                        <p>Prise en charge de différentes tailles d'images et formats pour diverses plateformes.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Temps réel</h4>
+                        <p>Mises à jour instantanées via AJAX sans rechargement de page.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Réalisation technique -->
+        <div class="projet-section">
+            <div class="section-header">
+                <h3>Réalisation technique</h3>
+            </div>
+            <div class="section-content">
+                <p class="texte">
+                    Pour la réalisation de ce projet, j'ai utilisé le framework <strong>Symfony</strong>, qui est un framework que j'ai découvert
+                    en début d'année, ainsi que du <strong>JavaScript</strong> pour garantir la réactivité et l'interactivité de l'interface
+                    utilisateur. L'intégration de requêtes <strong>AJAX</strong> permet des mises à jour en temps réel sans rechargement de la
+                    page notamment pour permettre de mettre son image de profil en privée bloquant sa visualisation, ce qui permet
+                    d'améliorer l'expérience utilisateur.
+                </p>
+                <p class="texte">
+                    L'interface est conçue en <strong>HTML/CSS</strong> avec une attention particulière portée à l'ergonomie et à
+                    l'accessibilité.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section Apprentissages -->
+        <div class="projet-section">
+            <div class="section-header">
+                <h3>Ce que j'ai appris</h3>
+            </div>
+            <div class="section-content">
+                <p class="texte">
+                    Ce premier projet m'a permis de développer mes compétences sur un framework via Symfony, que j'ai pu mettre
+                    en pratique pour ce projet. Il m'a également permis de consolider mes compétences en JavaScript.
+                </p>
+                <div class="learning-list">
+                    <div class="learning-item">
+                        <span class="learning-check">&#10003;</span>
+                        <p>Développement de compétences sur le framework <strong>Symfony</strong></p>
+                    </div>
+                    <div class="learning-item">
+                        <span class="learning-check">&#10003;</span>
+                        <p>Consolidation des compétences en <strong>JavaScript</strong></p>
+                    </div>
+                    <div class="learning-item">
+                        <span class="learning-check">&#10003;</span>
+                        <p>Intégration de requêtes <strong>AJAX</strong> pour une meilleure UX</p>
+                    </div>
+                    <div class="learning-item">
+                        <span class="learning-check">&#10003;</span>
+                        <p>Attention à l'<strong>ergonomie</strong> et à l'<strong>accessibilité</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 </main>
 <script src="js/footer.js"></script>

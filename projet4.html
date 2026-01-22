@@ -16,44 +16,117 @@
         <h1> QueueApp</h1>
         <p class="statut">Lors de mon stage de deuxième année, j'ai développé une application de gestion de file d'attente. </p>
     </div>
-    <section class="containerGlobal">
-        <div class="imgProjet"><img src="gif/queueApp.gif" alt="site"></div>
-        <h2 class="h2APropos"> En quoi le développement d’une application de gestion de file
-            d’attente répond à un besoin crucial d’organisation ?</h2>
-        <p class="texte">
-            DNA Webhosting, une entreprise malgache spécialisée dans le
-            développement de solutions technologiques, m'a confié le développement
-            d’une application de gestion de file d'attente. Mon rôle consistait à
-            concevoir, conceptualiser et développer l’application. J’ai utilisé Docker
-            pour déployer mes applications, PHP pour le backend et JavaScript pour le
-            frontend. J’ai également utilisé une base de données MySQL et le service
-            de websockets de Pusher.
-            <br>
-            Pour le backend, j’ai choisi d’utiliser principalement PHP avec une
-            architecture MVC (Modèle-Vue-Contrôleur). Cette architecture permet
-            d’avoir un code organisé, maintenable, avec des séparations claires de
-            chaque rôle et évolutive.
-            <br>
-            Pour le frontend, j’ai choisi HTML/CSS et JavaScript pour ajouter du
-            dynamisme.
-            <br>
-            Pour améliorer l’expérience utilisateur en évitant les rechargements de page pour voir les données
-            actualisées, j’ai opté pour Pusher, un service en ligne qui simplifie la gestion des communications en temps
-            réel via les WebSockets. Le principe est simple : les clients peuvent s’abonner à des canaux pour recevoir
-            instantanément des événements. J’ai donc créé un canal pour chaque objet de ma base de données. Lorsqu’un
-            événement se produit dans l’application (par exemple, la création d’un nouvel agent), le serveur envoie une
-            requête à l’API de Pusher pour publier cet événement sur le canal correspondant. Pusher transmet alors
-            automatiquement l’événement à tous les clients abonnés, établissant une connexion persistante entre les
-            clients et ses serveurs, garantissant ainsi une diffusion en temps réel.
+    <section class="containerGlobal projet-detail">
 
-        </p>
+        <!-- Section Hero avec l'image -->
+        <div class="projet-hero">
+            <div class="imgProjet">
+                <img src="gif/queueApp.gif" alt="QueueApp">
+            </div>
+            <div class="projet-hero-info">
+                <h2 class="h2APropos">En quoi le développement d'une application de gestion de file d'attente répond à un besoin crucial d'organisation ?</h2>
+                <div class="tech-stack">
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">Pusher</span>
+                    <span class="tech-badge">Docker</span>
+                </div>
+            </div>
+        </div>
 
-        <h2>Ce que j’ai appris </h2>
+        <!-- Section Description -->
+        <div class="projet-section">
+            <div class="section-header">
+                <h3>Description du projet</h3>
+            </div>
+            <div class="section-content">
+                <p class="texte">
+                    <strong>DNA Webhosting</strong>, une entreprise malgache spécialisée dans le
+                    développement de solutions technologiques, m'a confié le développement
+                    d'une application de gestion de file d'attente. Mon rôle consistait à
+                    concevoir, conceptualiser et développer l'application.
+                </p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>Architecture MVC</h4>
+                        <p>Code organisé, maintenable avec des séparations claires de chaque rôle.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Temps réel</h4>
+                        <p>WebSockets via Pusher pour des mises à jour instantanées sans rechargement.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Déploiement Docker</h4>
+                        <p>Conteneurisation de l'application pour un déploiement simplifié.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Interface dynamique</h4>
+                        <p>Frontend en HTML/CSS et JavaScript pour une expérience utilisateur fluide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <p class="texte">
-            J’ai pu développer mes compétences en développement web avec du PHP.
-            <br>
-            J'ai découvert l'utilisation des WebSockets pour le temps réel avec Pusher.
+        <!-- Section Réalisation technique -->
+        <div class="projet-section">
+            <div class="section-header">
+                <h3>Réalisation technique</h3>
+            </div>
+            <div class="section-content">
+                <p class="texte">
+                    Pour le backend, j'ai choisi d'utiliser principalement <strong>PHP</strong> avec une
+                    architecture <strong>MVC</strong> (Modèle-Vue-Contrôleur). Cette architecture permet
+                    d'avoir un code organisé, maintenable, avec des séparations claires de
+                    chaque rôle et évolutive. J'ai utilisé <strong>Docker</strong> pour déployer mes applications et une base de données <strong>MySQL</strong>.
+                </p>
+                <p class="texte">
+                    Pour le frontend, j'ai choisi <strong>HTML/CSS</strong> et <strong>JavaScript</strong> pour ajouter du dynamisme.
+                </p>
+                <p class="texte">
+                    Pour améliorer l'expérience utilisateur en évitant les rechargements de page pour voir les données
+                    actualisées, j'ai opté pour <strong>Pusher</strong>, un service en ligne qui simplifie la gestion des communications en temps
+                    réel via les <strong>WebSockets</strong>. Le principe est simple : les clients peuvent s'abonner à des canaux pour recevoir
+                    instantanément des événements. J'ai donc créé un canal pour chaque objet de ma base de données. Lorsqu'un
+                    événement se produit dans l'application (par exemple, la création d'un nouvel agent), le serveur envoie une
+                    requête à l'API de Pusher pour publier cet événement sur le canal correspondant. Pusher transmet alors
+                    automatiquement l'événement à tous les clients abonnés, établissant une connexion persistante entre les
+                    clients et ses serveurs, garantissant ainsi une diffusion en temps réel.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section Apprentissages -->
+        <div class="projet-section">
+            <div class="section-header">
+                <h3>Ce que j'ai appris</h3>
+            </div>
+            <div class="section-content">
+                <p class="texte">
+                    J'ai pu développer mes compétences en développement web avec du PHP.
+                    J'ai découvert l'utilisation des WebSockets pour le temps réel avec Pusher.
+                </p>
+                <div class="learning-list">
+                    <div class="learning-item">
+                        <span class="learning-check">&#10003;</span>
+                        <p>Développement web avec <strong>PHP</strong> et architecture <strong>MVC</strong></p>
+                    </div>
+                    <div class="learning-item">
+                        <span class="learning-check">&#10003;</span>
+                        <p>Utilisation des <strong>WebSockets</strong> pour le temps réel avec <strong>Pusher</strong></p>
+                    </div>
+                    <div class="learning-item">
+                        <span class="learning-check">&#10003;</span>
+                        <p>Déploiement d'applications avec <strong>Docker</strong></p>
+                    </div>
+                    <div class="learning-item">
+                        <span class="learning-check">&#10003;</span>
+                        <p>Conception et développement <strong>autonome</strong> d'une application complète</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 </main>
 <script src="js/footer.js"></script>

@@ -937,6 +937,21 @@ h2 {
     justify-content: center;
     width: 100%;
 }
+
+.learning-check {
+      display: flex;
+       align-items: center;
+       justify-content: center;
+        width: 28px;
+        height: 28px;
+      background: linear-gradient(135deg, #00d9ff, #0099cc);
+       border-radius: 50%;
+      color: #0a0e27;
+        font-weight: bold;
+       font-size: 0.9rem;
+       flex-shrink: 0;
+       box-shadow: 0 0 12px rgba(0, 217, 255, 0.4);
+    }
 /*projet 2*/
 .lien {
     text-decoration: none;
@@ -1001,4 +1016,219 @@ Portfolio d'apprentisage
 
 .lien {
     font-style: italic;
+}
+
+/* Projet Detail Page Styles */
+.projet-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.projet-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 217, 255, 0.1);
+}
+
+.projet-hero .imgProjet {
+    margin: 0;
+}
+
+.projet-hero .imgProjet img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 217, 255, 0.15), 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projet-hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projet-hero-info h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1.3;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(0, 217, 255, 0.05));
+    border: 1px solid rgba(0, 217, 255, 0.3);
+    border-radius: 999px;
+    color: #00d9ff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.25), rgba(0, 217, 255, 0.1));
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.projet-section {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.1));
+    border: 1px solid rgba(0, 217, 255, 0.08);
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.projet-section:hover {
+    border-color: rgba(0, 217, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 217, 255, 0.08);
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(0, 217, 255, 0.1);
+}
+
+.section-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #dff8ff;
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+}
+
+.section-content {
+    color: #cfeff7;
+}
+
+.section-content .texte {
+    margin-bottom: 20px;
+}
+
+.section-content strong {
+    color: #00d9ff;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.feature-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.015), rgba(0, 0, 0, 0.15));
+    border: 1px solid rgba(0, 217, 255, 0.06);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 217, 255, 0.2);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 217, 255, 0.1);
+}
+
+.feature-card h4 {
+    margin: 0 0 8px 0;
+    color: #dff8ff;
+    font-size: 1.1rem;
+}
+
+.feature-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #b8e6f0;
+}
+
+.learning-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.learning-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    background: linear-gradient(90deg, rgba(0, 217, 255, 0.05), transparent);
+    border-left: 3px solid #00d9ff;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.3s ease;
+}
+
+.learning-item:hover {
+    background: linear-gradient(90deg, rgba(0, 217, 255, 0.1), transparent);
+    transform: translateX(6px);
+}
+
+.learning-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #e6faff;
+}
+
+/* Responsive pour projet-detail */
+@media (max-width: 900px) {
+    .projet-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .projet-hero .imgProjet {
+        order: -1;
+    }
+
+    .projet-hero-info {
+        align-items: center;
+    }
+
+    .tech-stack {
+        justify-content: center;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .projet-detail {
+        gap: 20px;
+    }
+
+    .projet-section {
+        padding: 18px;
+    }
+
+    .section-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .feature-card {
+        padding: 16px;
+    }
+
+    .learning-item {
+        padding: 12px 14px;
+    }
 }
